@@ -1,0 +1,60 @@
+
+
+#blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex: 1
+}
+
+
+.blog-cotanier-text {
+    width: calc(100% - 50%);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.blog-title {
+    text-align: left;
+}
+
+.blog-description {
+    text-align: left;
+}
+
+
+.blog-container-img {
+    width: calc(100% - 50%);
+
+}
+
+.blog-container-img  img{ 
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+
+    .blog-container {
+    flex-direction: column;
+    }
+
+    .blog-cotanier-text {
+    width: 100%;
+    }
+
+    .blog-container-img {
+    width: 100%;
+    }
+
+}

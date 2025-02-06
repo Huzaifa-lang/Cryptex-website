@@ -1,0 +1,264 @@
+#faq {
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+  --main-text-color: #8994a3;
+  --blue-color: #0e65a6;
+  --light-blue-color: #2E99EA;
+  --dark-blue-color: #1D2633;
+  --light-dark-blue-color: #0B2C46;
+  --dark-background-color: #10151C;
+  --white-color: #FFFFFF;
+  --box-color: #151B24;
+  --icon-background-color: #0C253A; 
+
+  
+}
+
+
+.faq-container {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.faq-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.faq-question-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.faq-question {
+  width: 100%;
+  margin-top: 1rem;
+
+  transition: background-color 0.5s ease, border-radius 0.5s ease;
+
+}
+
+
+/* reuse */
+
+
+.faq-question-btn {
+  width: 100%;
+  min-height: 5rem;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white-color);
+  border-bottom: 1px solid var(--main-text-color);
+
+
+
+}
+
+.faq-hover {
+  background-color:var(--box-color);
+  border-radius: 12px;
+  z-index: 99;
+}
+
+.faq-hover > :first-child {
+  border-bottom: 1px solid transparent;
+ 
+
+}
+
+
+/* reuse */
+
+
+.faq-answer {
+  width: 100%;
+  min-height: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+  padding-bottom: 2rem;
+  display: none;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+
+}
+.faq-answer-open {
+  display: flex;
+  opacity: 1;
+  max-height: 100rem; /* or a value that will be sufficient for the content */
+
+}
+
+.faq-answer p  {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--main-text-color);
+}
+
+.faq-answer p a  {
+  text-decoration: none;
+  color: var(--blue-color);
+}
+
+.faq-answer ul li  {
+  
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--main-text-color);
+}
+
+.faq-question-btn i{
+  font-size: 2rem;
+  color: var(--main-text-color);
+
+}
+
+
+.faq-ask-container {
+  width: 100%;
+  min-height: 40vh;
+  border-radius: 12px;
+  background-color: var(--box-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.faq-ask-container a  {
+  display: block;
+  border-radius: 12px;
+  border: 1px solid var(--light-blue-color);
+  height: 60px;
+  width: 60px;
+  background-color: var(--icon-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.faq-ask-container a i {
+  font-size: 1.8rem;
+  color: var(--light-blue-color);
+}
+
+.faq-ask-container-title {
+  font-size: 1.5rem;
+  color: var(--white-color);
+  font-weight: 500;
+  max-width: 200px;
+  margin-top: 1rem;
+}
+
+
+.faq-ask-container-description {
+
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--main-text-color);
+  line-height: 1.5rem;
+  width: 70%;
+  text-align: center;
+
+
+}
+
+
+
+
+
+/* COPY PASTE */
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* EVERYTHING IS FINE NO_NEED TO CHANGE */
+  .faq-question-container {
+  width: 100%;
+  }
+
+  .faq-answer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+
+ }
+
+
+ @media (max-width: 768px) {
+
+  .faq-question-container {
+    width: 100%;
+    }
+
+    .faq-answer ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .faq-question-btn {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      gap: 1rem;
+      font-size: 1rem;
+    
+    
+    }
+
+    .faq-question-btn i{
+    font-size: 1.5rem;
+    }
+
+    .faq-answer {
+
+      
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .ri-add-circle-line {
+      min-width: 10%;
+      max-width: 20%;
+    }
+    
+    .ri-close-circle-line {
+      min-width: 10%;
+      max-width: 20%;
+    }
+
+    
+
+}
+
+

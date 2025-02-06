@@ -1,0 +1,219 @@
+#hero {
+    background-color: var(--dark-background-color);
+    background-image: url('/background.aVmgWsj1.webp');
+    background-size:cover ;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 7rem 12% 0 12%;
+}
+
+
+.hero-container {
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    padding: 8%  0 5% 0;
+    gap: 2rem;
+    /* border: 2px solid red; */
+    /* RESPONSIVE DESIGN CHECK THIS PADADING */
+    padding-bottom: 8rem;
+}
+
+.hero-btns-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--dark-blue-color);
+    padding: 5px 5px;
+    border-radius: 35px;
+}
+
+.hero-btns-container p{
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+#have-an-account-btn {
+    background-color: rgba(240, 248, 255, 0.384);
+    padding: 5px 15px; 
+    border-radius: 35px;
+}
+
+.trade-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    padding-right: 8px;
+}
+
+.trade-btn i {
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem ;
+    text-align: center;
+    /* background-color: aqua; */
+    max-width: 950px;
+}
+
+.div-title {
+    font-size: 3.5rem;
+    background: linear-gradient(rgb(255, 255, 255), rgba(218, 218, 218, 0.651));
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+}
+
+
+.div-description{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+    background: linear-gradient(rgb(255, 255, 255), rgba(218, 218, 218, 0.651));
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.signup-and-email-btns-container  {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* background-color: aqua; */
+    height: 3.5rem;
+    width: 470px;
+
+}
+
+
+
+.signup-and-email-btns-container input {
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark-blue-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    padding-left: 3rem; /* Add padding to the left for the icon */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  .input-wrapper {
+    position: relative;
+    width: 350px;
+    height: 100%;
+  }
+  
+  
+  .input-wrapper i {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--main-text-color);
+    font-size: 1.5rem; /* Adjust as needed */
+    pointer-events: none; /* Ensure the icon doesn't interfere with input interactions */
+  }
+
+
+
+  #button_1{
+
+    height: 3rem;
+    width: auto;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--blue-color);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white-color);
+    cursor: pointer;
+  }
+
+  #button_1:hover {
+    background-color: var(--light-blue-color);
+  }
+
+  .hero-signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .hero-signup-container p {
+    font-size: 0.75rem;
+    color: var(--white-color);
+  }
+
+  .hero-signup-container p span {
+    text-decoration: underline;
+  }
+
+
+
+    @media (max-width: 768px) {
+    
+        #hero {
+            /* background-color: aqua; */
+            padding-top: 7rem;
+            min-height: 70vh;
+            /* border: 2px solid red; */
+
+        }
+
+        .hero-container {
+   
+            padding-top: 0;
+            padding-bottom: 4rem;
+            gap: 2rem;
+            
+        }
+
+        .hero-text-container {
+            max-width: 350px;
+            /* background-color: aqua; */
+        }
+        .div-title {
+            font-size: 2rem;
+            max-width: 350px;
+
+        }
+
+        .div-description{
+        
+            font-size: 1rem;
+        }
+
+        .mobile-hide {
+            display: none;
+        }
+        .signup-and-email-btns-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #privacy {
+            display: none;
+        }
+        .input-wrapper {
+            display: none;
+        }
+    
+    }

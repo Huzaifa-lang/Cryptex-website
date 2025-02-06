@@ -1,0 +1,59 @@
+#broker {
+    padding-top: 5rem;
+}
+
+
+.broker-container {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.broker-title-container {
+    width: calc(100% - 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: aqua; */
+    gap: 1rem;
+
+}
+
+.broker-description {
+    text-align: left;
+    max-width: 85%;
+
+}
+
+.broker-title {
+    text-align: left;
+    max-width: 85%;
+}
+.broker-image-container {
+    width: calc(100% - 50%);
+}
+
+.broker-image-container img {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+
+    .broker-container {
+    flex-direction: column;
+    }
+
+    .broker-title-container {
+    width: 100%;
+    }
+
+    .broker-image-container {
+    
+    width: 100%;
+    }
+
+
+}

@@ -1,0 +1,34 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-text-color: #8994a3;
+  --blue-color: #0e65a6;
+  --light-blue-color: #2E99EA;
+  --dark-blue-color: #1D2633;
+  --light-dark-blue-color: #0B2C46;
+  --dark-background-color: #10151C;
+  --white-color: #FFFFFF;
+  --box-color: #151B24;
+  --icon-background-color: #0C253A; 
+
+  
+}
+
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 12% 0 12%;
+}

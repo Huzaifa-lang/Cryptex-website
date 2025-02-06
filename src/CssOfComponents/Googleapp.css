@@ -1,0 +1,174 @@
+#google-app {
+    display: flex;
+    flex-direction: column;
+}
+.google-app-container {
+    flex: 1;
+   width: 100%;
+   height: auto;
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: space-between;
+    gap: 8rem;
+
+}
+
+
+.google-app-img {
+    width: calc(100% - 50%);
+    border-radius: 12px;
+    display: flex;
+    background-color: aqua;
+}
+
+.google-app-img  img{
+    flex: 1;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+
+.google-app-text {
+    width: calc(100% - 50%);
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+
+.qr-container {
+    background-color: var(--box-color);
+    width: 90%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 12px;
+    padding: 15px 15px;
+    border: 0.01rem solid #8994a313;
+
+}
+
+.qr-container img {
+
+    width: 9.375rem;
+    
+
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.qr-container-text {
+
+    max-width: 350px;
+}
+
+
+.qr-container-text-first {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.qr-container-text-second {
+    font-weight: 400;
+    color: var(--main-text-color);
+
+}
+
+
+
+.apps-links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.app-link {
+    height: 8rem;
+    width: 8rem;
+    background-color: var(--box-color);
+    border-radius: 12px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 0.01rem solid #8994a313;
+}
+
+
+.app-link a {
+    text-decoration: none;
+    color: var(--white-color);
+     
+}
+
+.app-link a i {
+    font-size: 3rem;
+}
+
+.app-link p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .googleapp-title {
+        text-align: left;
+    }
+
+    .google-app-container{
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .google-app-text {
+        align-items: flex-start;
+    }
+
+
+    
+
+
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .google-app-container {
+    
+    flex-direction: column-reverse;
+    gap: 2rem;
+    
+    }
+
+    .google-app-text {
+        width: 100%;
+    }
+
+    .google-app-img {
+    
+    
+        width: 100%;
+    }
+
+    
+
+
+}

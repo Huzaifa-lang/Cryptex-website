@@ -1,0 +1,302 @@
+.login-background-container {
+    height: 100vh;
+    width: 100vw;
+  background-image: url("/login-background.PNG");
+  background-size:cover;
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-effect {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    backdrop-filter: blur(5px); /* Creates the glass blur effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0)
+    ); /* Subtle gradient overlay */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    cursor: pointer;
+}
+
+.wrapper {
+    
+    min-height: 75vh;
+    min-width: 30rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.close-container {
+    padding: 1rem 1rem;
+    align-self: flex-end;
+    
+}
+
+.close-container i {
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: var(--dark-blue-color);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.close-icons {
+    text-decoration: none;
+}
+  /* REUSEABLE */
+
+.login-container {
+    /* background-color: #0077B5; */
+    
+    display: flex;
+    flex-direction: column; /* Stacks content vertically */
+    align-items: center;
+    padding: 3rem 3rem;
+    gap: 1rem;
+    
+    
+}
+
+.login-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-background-color);
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%; /* Ensures inputs take up full width */
+}
+
+.form-group input {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: px;
+    font-size: 1rem;
+}
+
+.form-group label {
+    position: absolute;
+    pointer-events: none;
+    font-size: 0.95rem;
+    color: #666565;
+    padding: 0 0.4rem;
+    margin-top: 1rem;
+
+    transition: 0.2s ease all;
+}
+
+
+.form-check-box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.form-check-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-check-box label {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #3b3b3b;
+}
+
+.form-check-box input {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.form-check-box-container a {
+    text-decoration: none;
+}
+
+.form-check-box-container a span {
+    color: #3b3b3b;
+    text-decoration: underline;
+
+}
+.submit-button input {
+    background-color: var(--blue-color);
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Adds smooth transition */
+
+}
+
+.submit-button input:hover{
+    background-color: var(--dark-blue-color);
+
+
+}
+
+.sign-up-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.sign-up-info-container p {
+
+    color: #666565;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+
+
+.sign-up-redirect{
+    color: #3b3b3b;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.or-container {
+    background-color: rgba(14, 101, 166, 0.5); /* Set the background with reduced opacity */
+            height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.or {
+
+    
+    background-color: var(--blue-color);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.or p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    transform: translate(-50%,);
+}
+
+.social-media-container {
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* background-color: #3b3b3b; */
+}
+
+.social-media-container h5 {
+    font-size: 1.1rem;
+    color: var(--dark-background-color);
+
+}
+
+.social-media-icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: #0077B5; */
+}
+
+.sign-up-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Adds smooth transition */
+
+
+}
+
+.sign-up-icon:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.397);
+    background-color: var(--dark-blue-color);
+
+
+    
+}
+
+.social-media-icons-container i {
+    
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+
+
+.google {
+    background-color: #0F9D58;
+}
+
+.facebook {
+    background-color: #1877F2;
+}
+
+
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+
+
+
+.instagram {
+    background-color: #FCAF45;
+}
+
+
+
+.linkedin {
+    background-color: #0077B5;
+}
+
+
