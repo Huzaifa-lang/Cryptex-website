@@ -10,7 +10,7 @@ function Googleapp() {
       
       
       <div className="google-app-img">
-        <img src="public/app-image-en.Bb8WS5uT.webp" alt="" />
+        <img src="/app-image-en.Bb8WS5uT.webp" alt="" />
 
       </div>
 
